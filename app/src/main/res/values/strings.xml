@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">StoCount</string>
+
+    <!-- login activity -->
+    <string name="login_btn_text">Sign in with Google</string>
+    <string name="loading">Loading......</string>
+    <string name="error_initialise_user">Unable to intialise the user. Please try to sign with google again.</string>
+    <string name="offline_firstime_text">You are required to have internet connection to login when first using the application.</string>
+    <string name="google_api_signin_error">Unable to signin with your google account. Please try again later.</string>
+
+    <!-- Stock Period activity -->
+    <string name="cd_user_photo">User Photo from Google Profile</string>
+    <string name="cd_user_name">Username</string>
+    <string name="cd_user_email">User Email</string>
+    <string name="cd_fab_save_stock_period">Save Stock Period</string>
+    <string name="cd_calendar_view">Stock Period Start Date Calendar View</string>
+
+    <string name="cd_close_stock_period">Close Stock Period</string>
+    <string name="cd_stock_period_starting">Stock Period Starting : </string>
+    <string name="no_date_selection">No Selection</string>
+
+    <!-- Home Activity -->
+    <string name="cd_stock_period_start_date">Current Stock Period Starting : </string>
+    <string name="scan_btn_text">Scan Product Barcode</string>
+    <string name="search_btn_text">Search Product Name</string>
+    <string name="view_btn_text">View Product List</string>
+    <string name="close_btn_text">Close Stock Period</string>
+    <string name="cd_banner_ad">Google Banner Ad</string>
+
+    <string name="error_barcode_text">Error loading barcode scanning :</string>
+    <string name="cancelled_barcode_text">Cancelled Scanning Barcode</string>
+    <string name="scanned_barcode_log_text">Scanned : </string>
+
+    <string name="no_product_found_toast_text">No product found for </string>
+    <string name="search_criteria_barcode">barcode :</string>
+    <string name="search_criteria_productid">productid :</string>
+    <string name="search_criteria_productname">productname :</string>
+<string name="search_voice_prompt">Say: {Product Name} QUANTITY {Stock Count Value}</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+    <!-- Product List Activity -->
+
+    <string name="cd_empty_view_list_item">Please add a new product</string>
+    <string name="cd_empty_view_no_count_list_item">No Stock Count Recorded for this period</string>
+    <string name="cd_product_name">product name</string>
+    <string name="cd_additional_info">additional info</string>
+    <string name="cd_stock_count">stock count</string>
+    <string name="cd_product_image">product image</string>
+
+    <string name="manual_fab_text">Manual Product Entry</string>
+    <string name="api_search_fab_text">API Product Name Search</string>
+    <string name="api_scan_fab_text">API Product Barcode Search</string>
+    <string name="deleted">Deleted</string>
+    <string name="undo">Undo</string>
+
+    <string name="unable_delete_previous_stock_toast">Unable delete product for previous stock period.</string>
+    <string name="preivous_stock_period_spinner_item_text">From %1$s To %2$s</string>
+    <string name="current_stock_period_spinner_item_text">Current Period From</string>
+    <string name="api_search_no_product_found_barcode">Sorry, unable to find a product matches the barcode : </string>
+    <string name="api_search_no_product_found_name">Sorry, unable to find a product for : </string>
+    <string name="api_search_error">There\'s an issue with product search. Please try again later.</string>
+
+    <!-- Detail Activity -->
+    <string name="cd_description">Product Description</string>
+    <string name="change_barcode_fab_text">Change Barcode</string>
+    <string name="edit_fab_text">Edit</string>
+    <string name="save_fab_text">Save</string>
+    <string name="cancel_fab_text">Cancel</string>
+    <string name="save_successful_toast_text">Save Successful..........</string>
+    <string name="failed_save_toast_text">FAILED To Save ..........</string>
+
+    <string name="image_source_camera">camera</string>
+    <string name="image_source_gallery">image gallery</string>
+
+    <!-- ImageChooser Dialog Fragment -->
+    <string name="image_chooser_title">Select image source</string>
+
+    <!-- Widget -->
+    <string name="cd_emtpy_view">Empty View</string>
+
+    <!-- menu item -->
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_search">Search</string>
+    <string name="action_backup">Backup</string>
+    <string name="action_restore">Restore</string>
+    <string name="action_send">Send Backup File</string>
+    <string name="action_print">Print</string>
+
+    <string name="backup_successful">Backup DB Completed</string>
+    <string name="backup_error">Unable to Backup DB</string>
+    <string name="restore_successful">Restore DB Version %1$d Completed</string>
+    <string name="restore_error">Unable to Restore DB due to error code %1$d</string>
+
+    <!-- searchable xml -->
+    <string name="search_hint">stock count by product name</string>
+    <string name="search_api_hint">Add product by API product name</string>
+    <string name="search_setting_description">Product Name</string>
+
+    <!-- others -->
+    <string name="product_not_found_toast_text">Product not found for : </string>
+    <string name="product_default_name">Enter Product Name</string>
+    <string name="product_default_description">Enter Description</string>
+    <string name="product_default_additional_info">Enter Additional Info</string>
+</resources>

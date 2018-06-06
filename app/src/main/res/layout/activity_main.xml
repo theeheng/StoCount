@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/stockPeriodDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/keyline_margin"
+        android:layout_marginStart="@dimen/keyline_margin"
+        android:layout_marginTop="@dimen/keyline_margin"
+        android:padding="@dimen/keyline_margin"
+        android:text="@string/cd_stock_period_start_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/scanButton"
+        android:layout_width="@dimen/home_button_width"
+        android:layout_height="@dimen/home_button_height"
+        android:background="@color/teal_500"
+        android:contentDescription="@string/scan_btn_text"
+        android:drawableTop="@mipmap/ic_barcode"
+        android:padding="@dimen/keyline_margin"
+        android:text="@string/scan_btn_text"
+        android:textColor="@color/text_light"
+        android:layout_marginTop="@dimen/keyline_margin"
+        app:layout_constraintEnd_toStartOf="@+id/buttonVerticalGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stockPeriodDate" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="@dimen/home_button_width"
+        android:layout_height="@dimen/home_button_height"
+        android:background="@color/teal_500"
+        android:contentDescription="@string/search_btn_text"
+        android:drawableTop="@android:drawable/ic_menu_search"
+        android:padding="@dimen/keyline_margin"
+        android:text="@string/search_btn_text"
+        android:textColor="@color/text_light"
+        app:layout_constraintBottom_toTopOf="@+id/voiceButton"
+        app:layout_constraintEnd_toEndOf="@+id/scanButton"
+        app:layout_constraintStart_toStartOf="@+id/scanButton"
+        app:layout_constraintTop_toBottomOf="@+id/scanButton" />
+
+    <Button
+        android:id="@+id/voiceButton"
+        android:text="Voice Search"
+        android:contentDescription="Voice Search"
+        android:layout_width="@dimen/home_button_width"
+        android:layout_height="@dimen/home_button_height"
+        android:padding="@dimen/keyline_margin"
+        android:drawableTop="@android:drawable/ic_menu_search"
+        android:background="@color/teal_500"
+        android:textColor="@color/text_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/searchButton"
+        app:layout_constraintStart_toStartOf="@+id/searchButton"
+        app:layout_constraintTop_toBottomOf="@+id/searchButton" />
+
+    <Button
+        android:id="@+id/viewButton"
+        android:layout_width="@dimen/home_button_width"
+        android:layout_height="@dimen/home_button_height"
+        android:background="@color/teal_500"
+        android:contentDescription="@string/view_btn_text"
+        android:drawableTop="@android:drawable/ic_menu_view"
+        android:padding="@dimen/keyline_margin"
+        android:text="@string/view_btn_text"
+        android:textColor="@color/text_light"
+        app:layout_constraintBottom_toBottomOf="@+id/scanButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/buttonVerticalGuideline"
+        app:layout_constraintTop_toTopOf="@+id/scanButton" />
+
+    <Button
+        android:id="@+id/closeButton"
+        android:text="@string/close_btn_text"
+        android:contentDescription="@string/close_btn_text"
+        android:layout_width="@dimen/home_button_width"
+        android:layout_height="@dimen/home_button_height"
+        android:drawableTop="@android:drawable/ic_menu_view"
+        android:background="@color/teal_500"
+        android:textColor="@color/text_light"
+        android:padding="@dimen/keyline_margin"
+        app:layout_constraintBottom_toBottomOf="@+id/searchButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/buttonVerticalGuideline"
+        app:layout_constraintTop_toTopOf="@+id/searchButton" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonVerticalGuideline"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+
+</android.support.constraint.ConstraintLayout>
